@@ -1,26 +1,16 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>MyDance</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css"
-              href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
-    </head>
-    <body>
-        <div class="ui container">
-            <h1>0322 수요쁘락</h1>
-            <h2>필립</h2>
-            <div>
-                <label [hidden]="!isCalling">name: {{name}}.</label>
+<link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+<div class="ui container">
+    <h1>0322 수요쁘락</h1>
+    <h2>필립</h2>
+    <div>
+        <label [hidden]="!isCalling">name: {{name}}.</label>
 
-                <div>
-                    <input [(ngModel)]="name" />
-                    <button (click)="toggleCalling()" class="ui button">toggle Calling</button>
-                </div>
-            </div>
+        <div>
+            <input [(ngModel)]="name" />
+            <button (click)="toggleCalling()" class="ui button">toggle Calling</button>
         </div>
-    </body>
-</html>
+    </div>
+</div>
