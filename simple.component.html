@@ -19,7 +19,6 @@
                 <div class="meta"><i class="browser icon"></i> {{now.album}}</div>
                 <div class="meta"><i class="user icon"></i> {{now.artist}}</div>
                 <div class="meta"><i class="sound icon"></i> {{now.length}}</div>
-                <div class="meta"><i class="map signs icon"></i> {{now.genere}}</div>
                 <div class="meta"><i class="heartbeat icon"></i> {{now.bitrate}}</div>
             </div>
         </div>
@@ -33,8 +32,10 @@
         <div class="item" *ngFor="#el of list; #idx = index">
              <div class="middle aligned content">
                 <div class="ui grey header">{{el.title}}</div>
-                <div class="meta">{{el.artist}}</div>
-                <div class="meta">{{el.length}}</div>
+                <div class="meta">
+                    <i class="user icon"></i> {{el.artist}}
+                    <i class="sound icon"></i> {{el.length}}
+                </div>
             </div>
         </div>
     </div>
